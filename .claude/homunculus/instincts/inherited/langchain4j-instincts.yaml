@@ -1,0 +1,278 @@
+# Instincts generated from https://github.com/wwj-git-rgb/langchain4j
+# Generated: 2026-06-01T11:02:45.608Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: langchain4j-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/wwj-git-rgb/langchain4j
+---
+
+# Langchain4j Commit Length
+
+## Action
+
+Write moderate-length commit messages (~57 characters)
+
+## Evidence
+
+- Average commit message length: 57 chars
+- Based on 2 commits
+
+---
+id: langchain4j-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/wwj-git-rgb/langchain4j
+---
+
+# Langchain4j Naming Files
+
+## Action
+
+Use PascalCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: PascalCase
+
+---
+id: langchain4j-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/wwj-git-rgb/langchain4j
+---
+
+# Langchain4j Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: langchain4j-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/wwj-git-rgb/langchain4j
+---
+
+# Langchain4j Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: langchain4j-instinct-class-naming
+trigger: "When creating a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: wwj-git-rgb/langchain4j
+---
+
+# Langchain4j Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+- Java convention in codebase
+
+---
+id: langchain4j-instinct-function-naming
+trigger: "When defining a new function or method"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: wwj-git-rgb/langchain4j
+---
+
+# Langchain4j Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: langchain4j-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: wwj-git-rgb/langchain4j
+---
+
+# Langchain4j Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: langchain4j-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: wwj-git-rgb/langchain4j
+---
+
+# Langchain4j Instinct File Naming
+
+## Action
+
+Name the file using PascalCase
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+
+---
+id: langchain4j-instinct-import-style
+trigger: "When importing modules or classes"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: wwj-git-rgb/langchain4j
+---
+
+# Langchain4j Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: langchain4j-instinct-export-style
+trigger: "When exporting classes or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: wwj-git-rgb/langchain4j
+---
+
+# Langchain4j Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: langchain4j-instinct-commit-prefix-fix
+trigger: "When committing a bug fix"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: wwj-git-rgb/langchain4j
+---
+
+# Langchain4j Instinct Commit Prefix Fix
+
+## Action
+
+Prefix the commit message with 'fix:'
+
+## Evidence
+
+- Seen in commit 'fix: preserve Google AI Gemini tool call ids (#5308)'
+- Pattern in commits.prefixes
+
+---
+id: langchain4j-instinct-commit-format-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: wwj-git-rgb/langchain4j
+---
+
+# Langchain4j Instinct Commit Format Length
+
+## Action
+
+Keep the commit message concise (around 57 characters on average)
+
+## Evidence
+
+- Pattern in commits.averageLength
+
+---
+id: langchain4j-instinct-test-location-mixed
+trigger: "When adding new tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: wwj-git-rgb/langchain4j
+---
+
+# Langchain4j Instinct Test Location Mixed
+
+## Action
+
+Place test files in mixed locations (not strictly separated from source files)
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: langchain4j-instinct-module-organization-hybrid
+trigger: "When organizing new modules"
+confidence: 0.7
+domain: architecture
+source: repo-analysis
+source_repo: wwj-git-rgb/langchain4j
+---
+
+# Langchain4j Instinct Module Organization Hybrid
+
+## Action
+
+Use a hybrid approach (not strictly monolithic or micro-modular)
+
+## Evidence
+
+- Pattern in architecture.moduleOrganization
+
